@@ -1,0 +1,8 @@
+ToDo List Application v0.1
+
+Created the premilary components and files.
+Next Steps : 
+
+1. Need to connect files to get the response after submit.
+2. Style the index.ejs file so that it looks as it should.
+3. Need to figure out a way of storing the list item that has been added.
