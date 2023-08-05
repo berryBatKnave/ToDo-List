@@ -6,3 +6,16 @@ Next Steps :
 1. Need to connect files to get the response after submit.
 2. Style the index.ejs file so that it looks as it should.
 3. Need to figure out a way of storing the list item that has been added.
+
+
+ToDo List Application v1.0
+
+Created a website which keeps track of the to-list items that are created by the user.
+
+The basic functionality of the website has been made so releasing the website with the version of 1.0.
+
+There is a minor bug in the website that allows user to refresh the /submit page and the array which is storing the elements which are added gets pushed again with the same value as the last one. So in short a duplicate entry gets created.
+
+Will be tryin to fix the bug in the later releases.Currently I am not sure how to restric the user to refresh the /submit page.
+
+Adding Functionalities : Will be adding the functionality of a delete button when I will fix the bug for stopping refresh.

@@ -1,9 +1,27 @@
 <%- include("partials/header.ejs") %>
 
  <div class="list">
-    <h1>Your List</h1>
-    <form action="/submit" method="POST">
-      <input type="text" placeholder="New Task" class="list-input">
-      <input type="submit" value="+" class="submit-button">
-    </form>
+  <% if (locals.listArray) { %>
+    <h1>Let's Get To Work!</h1>
+    <% } else { %>
+      <h1>Enter Your List Here! 👇</h1>
+      <% } %>
+    <div class="new-list">
+      <form action="/submit" method="POST">
+        <input type="text" placeholder="New Task" class="list-input" name="list-value">
+        <input type="submit" value="Add" class="submit-button">
+      </form>
+    </div>
+    <div class="added-elements">
+      <ul>
+        <% if (locals.listArray) { %>
+          <% for(var i=0;i<listArray.length;i++) { %>
+            <li>
+            <input type="checkbox">
+            <label class="item"> <%= listArray[i] %></label></li>
+            <% }%>
+        <% }%>
+        
+      </ul>
+    </div>
  </div>   

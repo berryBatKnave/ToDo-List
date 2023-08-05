@@ -11,6 +11,11 @@ body{
     align-items: center;
 }
 
+.new-list{
+    background-color: white;
+    border-radius: 1rem;
+}
+
 .list {
     background-color: #dd4130;
     padding : 10px 0; 
@@ -20,6 +25,8 @@ body{
     width : 400px;
     border-radius: 0.5rem;
     padding: 20px;
+    margin:auto;
+    border: none;
 }
 
 .list-input{
@@ -28,16 +35,60 @@ body{
     /* min-height: 35px; */
     padding: 10px;
     font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 1rem;
+}
+
+.list-input:focus{
+    outline: none;
 }
 
 .submit-button{
     height : 43px;
-    width : 43px;
+    width : 76px;
     font-family: 'Poppins', sans-serif;
-    /* font-size: 20px; */
+    font-size: 15px;
     text-align: center;
     margin: auto;
     display: inline-block;
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
+    color: #dd4130;
     border: none;
+    border-radius: 1rem;
 }
+
+.submit-button:hover{
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + .item{
+    text-decoration: line-through;
+}
+
+.added-elements ul{
+    width: 100%;
+    margin-top : 0;
+    border-radius: 1rem;
+}
+
+.added-elements  ul li {
+    background-color: white;
+    list-style: none;
+    padding : 12px;
+    /* margin : 10px; */
+    margin-bottom: 10px;
+    max-width: 100%;
+    border-radius: 1rem;
+    color: #dd4130;
+    word-wrap: break-word;
+}
+
+.added-elements  ul li input{
+    margin-right: 10px;
+}
+
+.added-elements{
+    width: 100%;
+    margin-top: 20px;
+}
+
